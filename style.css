@@ -1,0 +1,215 @@
+/* navigation 1 start*/
+
+.nav {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: relative;
+}
+
+.nav * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+.nav li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1em;
+  padding: 0;
+  padding-top: 7px;
+}
+.nav a {
+  padding: 0.5em 0.8em;
+  color: rgb(216, 228, 250);
+  position: relative;
+  text-decoration: none;
+  font-size: 30px;
+  text-shadow: 3px 0 10px rgb(31, 28, 28);
+  color: rgb(238, 238, 23);
+  font-family: "Staatliches", cursive;
+}
+.nav a::before,
+.nav a::after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: "";
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+.nav a::before {
+  right: 0;
+  top: 0;
+  border-right: 3px solid rgb(209, 187, 190);
+  border-top: 3px solid rgb(209, 187, 190);
+  border-radius: 3px;
+  transform: translate(-100%, 50%);
+}
+
+.nav a::after {
+  left: 0;
+  bottom: 0;
+  border-left: 3px solid rgb(209, 187, 190);
+  border-bottom: 3px solid rgb(209, 187, 190);
+  border-radius: 3px;
+  transform: translate(100%, -50%);
+}
+a:hover::before,
+a:hover::after {
+  transform: translate(30%, -20%);
+  opacity: 1;
+}
+a:hover::before {
+  transform: translate(-20%, 30%);
+  opacity: 1;
+}
+
+/* navigation 1 stop */
+/* navigation 2 start */
+.nav2 {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 500;
+  letter-spacing: 1px;
+  position: absolute;
+}
+
+.nav2 * {
+  box-sizing: border-box;
+  transition: all 0.35s ease;
+}
+
+.nav2 li {
+  display: inline-block;
+  list-style: outside none none;
+  margin: 0.5em 1em;
+  padding: 0;
+  padding-top: 7px;
+}
+.nav2 a {
+  padding: 0.5em 0.8em;
+  color: rgb(216, 228, 250);
+  position: relative;
+  text-decoration: none;
+  font-size: 30px;
+  text-shadow: 3px 0 10px rgb(31, 28, 28);
+  color: rgb(238, 238, 23);
+  font-family: "Staatliches", cursive;
+}
+.nav2 a::before,
+.nav2 a::after {
+  height: 14px;
+  width: 14px;
+  position: absolute;
+  content: "";
+  transition: all 0.35s ease;
+  opacity: 0;
+}
+
+.nav2 a::before {
+  right: 0;
+  top: 0;
+  border-left: 3px solid rgb(209, 187, 190);
+  border-top: 3px solid rgb(209, 187, 190);
+  border-radius: 3px;
+  transform: translate(-100%, 50%);
+}
+
+.nav2 a::after {
+  left: 0;
+  bottom: 0;
+  border-right: 3px solid rgb(209, 187, 190);
+  border-bottom: 3px solid rgb(209, 187, 190);
+  border-radius: 3px;
+  transform: translate(100%, -50%);
+}
+a:hover::before,
+a:hover::after {
+  transform: translate(30%, -20%);
+  opacity: 1;
+}
+a:hover::before {
+  transform: translate(-20%, 30%);
+  opacity: 1;
+}
+/* navigation 2 stop */
+
+header {
+  background-image: linear-gradient(darkgrey, rgb(121, 90, 90));
+  margin: 0;
+  padding: 0%;
+  border-bottom: solid rgba(201, 52, 26, 0.849);
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+}
+main {
+  background-image: linear-gradient(rgb(121, 90, 90), rgb(247, 235, 235));
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+header ul {
+  margin: 0;
+}
+.pagetop {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.logo p {
+  margin-left: 80px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgba(6, 5, 17, 0.534);
+  text-shadow: 3px 0 5px white;
+  font-family: "Staatliches", cursive;
+}
+.box {
+  display: table;
+  padding-top: 15vh;
+}
+.box-row {
+  display: table-row;
+}
+.box-cell {
+  display: table-cell;
+}
+.center {
+  width: 960px;
+  margin: 0 auto;
+}
+body {
+  margin: 0;
+  font-family: "Gloria Hallelujah", cursive;
+}
+footer {
+  background-image: linear-gradient(rgb(247, 235, 235), rgb(255, 255, 255));
+}
+footer p {
+  margin: 0;
+  padding-top: 40px;
+  padding-bottom: 30px;
+  text-align: center;
+}
+img {
+  border-radius: 10px;
+  box-shadow: 0 0 50px white;
+  transition: all 0.345s ease;
+}
+img:hover {
+  box-shadow: 0 0 10px wheat;
+}
